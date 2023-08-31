@@ -1,0 +1,226 @@
+body{
+    background-color: #c3ceda;
+    font-family: "Trebuchet MS", sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Awal Header */
+
+nav{
+    width: 100%;
+    background-color: #071330;
+    /* height: 200px; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    color: aliceblue;
+    padding: 20px;
+    font-size: 1.5vw;
+    z-index: 999;
+    box-shadow: 0px 3px 4px gray;
+}
+
+nav .logo h1{
+    font-size: 3.25vw;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+nav .container{
+    width: 37.5%;
+}
+
+#navigation{
+    display: flex;
+    /* border: 2px solid black; */
+    list-style: none;
+    justify-content: space-evenly;
+}
+
+#navigation li a{
+    text-transform: capitalize;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1.2em;
+    letter-spacing: 2px;
+    color: aliceblue;
+}
+
+#navigation li a:hover{
+   color: #46a6fa;
+}
+
+@media screen and (max-width: 800px){
+    nav {
+        display: flex;
+        flex-direction: column;
+    }
+
+    nav .logo h1{
+        font-size: 4vw;
+        margin-bottom: 5px;
+    }
+
+    nav .container{
+        font-size: 2.7vw;
+    }
+
+    nav .container{
+        width: 60%;
+    }
+
+    #navigation{
+        display: flex;
+        justify-content: space-between;
+        /* border: 3px solid black; */
+    }
+}
+
+/* Akhir Header */
+
+main{
+    margin-top: 150px;
+}
+
+main h2{
+    margin-left: 25px;
+    margin-bottom: 10px;
+}
+
+/* #section1{
+    width: 90%;
+    height: 800px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.card{
+    width: 30%;
+    height: 200px;
+    border: 1px solid black;
+    padding: 10px;
+}
+
+.card img{
+    margin: auto;
+    width: 50%;
+} */
+
+#section1{
+    max-width: 1000px;
+    height: 600px;
+    display: flex;
+    justify-content: space-evenly;
+    margin: auto;
+    flex-wrap: wrap;
+    align-content: space-around;
+    /* border: 2px solid black; */
+    
+}
+
+.card{
+    border: 2px solid #071330;
+    width: 30%;
+    padding: 10px;
+    background-color: aliceblue;
+    border-radius: 10px;
+    box-shadow: -0.4vw 0.4vw 0.4vw gray;
+    transition: 0.5s;
+}
+
+.card img{
+    width: 250px;
+}
+
+.card:hover{
+    transform: translateX(10px) translateY(-10px);
+    box-shadow: -0.2vw 0.2vw 0.4vw gray;
+}
+
+/* Awal Footer */
+
+#footer{
+    width: 100%;
+    /* height: 200px; */
+    background-color:#071330;
+    padding: 10px;
+    font-size: 2.5vmin;
+    /* sementara */
+    /* position: absolute;
+    bottom: 0; */
+}
+
+.footer-content{
+    /* height: 100px;  */
+    /* background-color: aqua; */
+    /* border: 2px solid black; */
+    color: aliceblue;
+    margin: 20px;
+    margin-bottom: 40px;
+}
+
+.footer-content h2{
+    text-transform: capitalize;
+    letter-spacing: 3px;
+    margin-bottom: 15px;
+}
+
+.footer-content p{
+    letter-spacing: 0.8px;
+}
+
+.contact{
+    margin-bottom: 15px;
+    display: flex;
+    /* border: 2px solid black; */
+    justify-content: left;
+    align-items: center;
+}
+
+.contact .image{
+    margin-right: 10px;
+}
+
+.contact .image img{
+    width: 2vw;
+}
+
+#social{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* border: 2px solid black;s */
+    width: 250px;
+}
+
+#social a img{
+    height: 40px;
+    transition: 0.5s;
+}
+
+#social a img:hover{
+    transform: translateY(-10px);
+}
+
+@media screen and (min-width: 800px){
+
+    #footer{
+        display: flex;
+        justify-content: space-around;
+        /* flex-wrap: wrap; */
+    }
+
+    .footer-content{
+        width: 30%;
+    }
+}
+/* Akhir Footer */

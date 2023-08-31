@@ -1,0 +1,238 @@
+body{
+    background-color: #c3ceda;
+    font-family: "Trebuchet MS", sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Awal Header */
+
+nav{
+    width: 100%;
+    background-color: #071330;
+    /* height: 200px; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    color: aliceblue;
+    padding: 20px;
+    font-size: 1.5vw;
+    z-index: 999;
+    box-shadow: 0px 3px 4px gray;
+}
+
+nav .logo h1{
+    font-size: 3.25vw;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+nav .container{
+    width: 37.5%;
+}
+
+#navigation{
+    display: flex;
+    /* border: 2px solid black; */
+    list-style: none;
+    justify-content: space-evenly;
+}
+
+#navigation li a{
+    text-transform: capitalize;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1.2em;
+    letter-spacing: 2px;
+    color: aliceblue;
+}
+
+#navigation li a:hover{
+   color: #46a6fa;
+}
+
+@media screen and (max-width: 800px){
+    nav {
+        display: flex;
+        flex-direction: column;
+    }
+
+    nav .logo h1{
+        font-size: 4vw;
+        margin-bottom: 5px;
+    }
+
+    nav .container{
+        font-size: 2.7vw;
+    }
+
+    nav .container{
+        width: 60%;
+    }
+
+    #navigation{
+        display: flex;
+        justify-content: space-between;
+        /* border: 3px solid black; */
+    }
+}
+
+/* Akhir Header */
+
+main .container{
+    width: 90%;
+    height: 800px;
+    background-color: #46a6fa;
+    margin: 120px auto 30px;
+    background-color: #0C4160;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    box-shadow: 3px 3px 2px grey;
+}
+
+.container .title{
+    width: 80%;
+    text-align: center;
+    line-height: 50px;
+    /* border: 2px solid black; */
+    margin: auto;
+    color: aliceblue;
+    font-size: medium;
+}
+
+.container .title h2{
+    font-size: xx-large;
+}
+
+.container .forms{
+    width: 80%;
+    height: 75%;
+    /* border: 2px solid black; */
+    margin: auto;
+    padding: 30px;
+    color: aliceblue;
+}
+
+label{
+    font-weight: bold;
+    font-size: larger;
+}
+
+input{
+    margin: 15px 0;
+}
+
+input[type=text], input[type=email], input[type=tel]{
+    width: 100%;
+    /* margin: 10px 0; */
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+input[type=submit]{
+    width: 40%;
+    padding: 15px 10px;
+    border-radius: 5px;
+    border: 0px;
+    background-color: #a6cced;
+}
+
+input[type=submit]:hover{
+    background-color: #738fa7;
+}
+
+/* Awal Footer */
+
+#footer{
+    width: 100%;
+    /* height: 200px; */
+    background-color:#071330;
+    padding: 10px;
+    font-size: 2.5vmin;
+    /* sementara */
+    /* position: absolute;
+    bottom: 0; */
+}
+
+.footer-content{
+    /* height: 100px;  */
+    /* background-color: aqua; */
+    /* border: 2px solid black; */
+    color: aliceblue;
+    margin: 20px;
+    margin-bottom: 40px;
+}
+
+.footer-content h2{
+    text-transform: capitalize;
+    letter-spacing: 3px;
+    margin-bottom: 15px;
+}
+
+.footer-content p{
+    letter-spacing: 0.8px;
+}
+
+.contact{
+    margin-bottom: 15px;
+    display: flex;
+    /* border: 2px solid black; */
+    justify-content: left;
+    align-items: center;
+}
+
+.contact .image{
+    margin-right: 10px;
+}
+
+.contact .image img{
+    width: 2vw;
+}
+
+#social{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* border: 2px solid black;s */
+    width: 250px;
+}
+
+#social a img{
+    height: 40px;
+    transition: 0.5s;
+}
+
+#social a img:hover{
+    transform: translateY(-10px);
+}
+
+@media screen and (min-width: 800px){
+
+    #footer{
+        display: flex;
+        justify-content: space-around;
+        /* flex-wrap: wrap; */
+    }
+
+    .footer-content{
+        width: 30%;
+    }
+
+    .container .title{
+        width: 500px;
+    }
+
+    .container .forms{
+        width: 500px;
+    }
+
+}
+/* Akhir Footer */
